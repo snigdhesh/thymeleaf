@@ -77,6 +77,11 @@ Create regular html file under `src/main/resources/templates` and name it as `th
 src > main > resources > templates > fragments > footer.html
 -------------------------------------------------------------
 <html>
+    <head>
+        <style>
+            .container{..}
+        </style>        
+    </head>
     <div class="container" th:fragment="footer">
         <p> You are in footer</p>
     </div>
