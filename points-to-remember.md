@@ -1,0 +1,2 @@
+## Points to remember
+- We need both thymeleaf attributes and regular HTML attributes, because regular HTML attributes are used to render webpage by browser, whereas thymeleaf attributes are for Spring MVC to understand the template.

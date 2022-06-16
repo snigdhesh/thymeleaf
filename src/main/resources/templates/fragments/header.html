@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title th:text="#{index.title.name}">index</title>
+    <style>
+        .jumbotron{
+            #background: url("https://bit.ly/3HpcU4S");
+            background: #E42873;
+        }
+        li{
+            display: inline-block;
+            padding: 0.5em;
+            margin: -1em 0.5em 0 0.5em;
+            float: left;
+            font-size: 1.5em;
+            height: auto;
+        }
+        ul li:hover{
+            background: gainsboro;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .p-3{
+            height: 3.2em;
+        }
+    </style>
+</head>
+<body>
+<!--class 'mt-5' is removed from this div, to avoid margin-top for this div.-->
+<div class="mt-0 p-3 jumbotron text-white" th:fragment="jumbotron">
+    <ul>
+        <li>Home</li>
+        <li>
+            <a class="nav-link" th:href="@{/swagger-ui.html}">Swagger</a>
+        </li>
+        <li>Code repo</li>
+        <li>Readme</li>
+        <li style="float: right">login</li>
+    </ul>
+</div>
+</body>
+</html>
