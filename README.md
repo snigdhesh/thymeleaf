@@ -3,6 +3,7 @@
 - https://www.baeldung.com/thymeleaf-in-spring-mvc
 - https://www.udemy.com/course/mastering-thymeleaf-with-spring/ [Udemy Course by Spring Guru]
 - https://attacomsian.com/blog/spring-boot-thymeleaf-file-upload [Springboot + thymeleaf + file upload]
+- https://attacomsian.com/blog/spring-boot-thymeleaf-form-handling [Springboot + HTML form handling]
 
 
 # How to setup thymeleaf for spring boot ?
